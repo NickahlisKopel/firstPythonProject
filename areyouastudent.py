@@ -1,6 +1,6 @@
 students = ["Nick", "John", "Keith", "Brett"]
 
-is_student = 0
+is_student = False
 
 
 print("Are your a student? Lets find out...")
@@ -11,8 +11,8 @@ if question[0] == "y":
     name = input("What is your name?\nname: ").strip()
     for student_name in students:
         if name == student_name:
-            is_student = is_student + 1
-    if is_student > 0:
+            is_student = True
+    if is_student:
         print("Welcome to class.")
     else:
         print("You're not supposed to be here.")
